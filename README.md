@@ -1,0 +1,1 @@
+This script demonstrates the use of different Python data types such as integer, float, string, and boolean. It shows how to check variable types, perform arithmetic operations, convert user input using type casting, handle invalid input with error handling, concatenate strings and numbers, and illustrate Python’s dynamic typing with clear comments for better understanding.
