@@ -1,0 +1,67 @@
+# datatypes_demo.py
+# This script demonstrates different Python data types, operations,
+# type casting, error handling, and dynamic typing.
+
+# 1 & 2. Declare variables of different data types
+integer_var = 10            # int type
+float_var = 3.5             # float type
+string_var = "Python"       # string type
+boolean_var = True          # boolean type
+
+# 3. Print the type of each variable
+print("Type of integer_var:", type(integer_var))
+print("Type of float_var:", type(float_var))
+print("Type of string_var:", type(string_var))
+print("Type of boolean_var:", type(boolean_var))
+
+print("-" * 40)
+
+# 4. Perform arithmetic operations using numeric variables
+sum_result = integer_var + float_var
+difference = integer_var - float_var
+product = integer_var * float_var
+division = integer_var / float_var
+
+print("Sum:", sum_result)
+print("Difference:", difference)
+print("Product:", product)
+print("Division:", division)
+
+print("-" * 40)
+
+# 5 & 6. Convert string input to integer and float using type casting
+# and handle invalid input using error handling
+try:
+    num1 = int(input("Enter an integer number: "))   # Convert input string to integer
+    num2 = float(input("Enter a decimal number: "))  # Convert input string to float
+
+    print("Integer value:", num1)
+    print("Float value:", num2)
+
+except ValueError:
+    print("Invalid input! Please enter numeric values only.")
+
+print("-" * 40)
+
+# 7. Concatenate strings and numbers properly
+# Numbers must be converted to string before concatenation
+age = 20
+message = "My age is " + str(age)  # Converting integer to string
+print(message)
+
+print("-" * 40)
+
+# 8. Demonstrate dynamic typing
+value = 100            # Initially an integer
+print("Value:", value, "Type:", type(value))
+
+value = "Now I am a string"  # Reassigned to a string
+print("Value:", value, "Type:", type(value))
+
+value = 45.6           # Reassigned to a float
+print("Value:", value, "Type:", type(value))
+
+print("-" * 40)
+
+# 9. Clear comments are added throughout the code explaining each conversion
+print("Program executed successfully.")
